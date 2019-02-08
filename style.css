@@ -97,12 +97,12 @@ td {
 }
 
 .btn-prime, .btn-prime:hover {
-    border-radius: 0;
+    border-radius: 50px;
     color: #04c49a;
     border-color: #04c49a;
 }
 
-.btn-prime:hover {
+.btn-prime:focus {
     background-color: #04c49a;
     color: #fbfbfb;
 }
