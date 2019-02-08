@@ -1,0 +1,277 @@
+<!-- 
+    I see that you want to see my code.
+    Well, I guess I'll let you, but first, you have to solve this maze in under 10 seconds.
+    No cheating!
+
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+    8   8               8               8           8                   8   8
+    8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+    8               8       8   8           8           8   8   8       8   8
+    8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+    8       8   8               8           8   8   8   8   8           8   8
+    8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+    8   8               8   8   8       8           8           8       8   8
+    8   8aaaaaaaaaaaa   8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+    8           8       8   8       8   8       8           8   8           8
+    8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+    8       8       8   8   8       8       8       8   8   8       8       8
+    8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+    8           8   8           8       8   8       8   8       8           8
+    8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+    8   8       8           8           8       8   8   8               8   8
+    8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+    8   8           8   8   8   8   8           8               8   8       8
+    8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+    8   8       8   8   8           8           8   8       8               8
+    8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+    8   8                   8           8               8               8   8
+    8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+
+    I bet it took you more than 10 seconds. :-)
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paul Cosma - Web Developer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="top"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Paul Cosma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skillset">Skillset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container col-md-8 col-lg-6">
+            <h4>
+                Hello, I'm a full-stack developer from Timsoara, Romania. 
+                My job here is to release you from the headache of web development.
+            </h4>
+
+            <div class="text-center">
+                <button class="btn btn-prime col-6 col-lg-4" onclick="document.querySelector('#contact').scrollIntoView()">Get in touch</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container col-md-8 col-lg-6">
+            <h3>About me</h3>
+            <p>
+                I'm Paul, a programming enthusiast, computer science student at West University of Timisoara and full-stack web developer at msg-systems Romania.
+            </p>
+            <p>
+                My passion is creating great software and I find hapiness in being a better developer every day.
+            </p>
+        </div>
+    </section>
+
+    <section id="skillset">
+        <div class="container col-md-8 col-lg-6">
+            <h3>Skillset</h3>
+            <p>
+                I understand the challenges of being a developer so here's a couple of things I can handle.
+            </p>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Java</td>
+                        <td>TypeScript</td>
+                    </tr>
+                    <tr>
+                        <td>Spring Boot</td>
+                        <td>Angular</td>
+                        <td>Hibernate</td>
+                    </tr>
+                    <tr>
+                        <td>SAP UI5</td>
+                        <td>jQuery</td>
+                        <td>Laravel</td>
+                    </tr>
+                    <tr>
+                        <td>MySQL</td>
+                        <td>MariaDB</td>
+                        <td>Mongo</td>
+                    </tr>
+                    <tr>
+                        <td>Docker</td>
+                        <td>Vagrant</td>
+                        <td>NodeJS</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                And here's a list of other technologies I had the chance to work with.
+            </p>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Express</td>
+                        <td>Symfony</td>
+                        <td>Kotlin</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Vue</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Communication</h4>
+            <p>
+                I believe that communication is a must. 
+                To reach this goal I use tools like Slack and Skype but the face-to-face conversations are the ones that rule over the others.
+            </p>
+
+            <h4>Time Management</h4>
+            <p>
+                My aim is to always work efficiently and finish my tasks on time.
+                Time can be your friend or your biggest enemy. It depends on how you organise it.   
+            </p>
+
+            <h4>Organisation</h4>
+            <p>
+                I realize the importance of good organisation. 
+                For this I like to use Trello, Waffle and GitLab's integrated application.
+            </p>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="container col-md-8 col-lg-6">
+            <h3>My Work</h3>
+            <p>
+                Here's a list of recent projects that I have worked on.
+            </p> 
+            
+
+            <h4>Member-In-Out Portal</h4>
+            <p>
+                Application made for an international life insurance company that handles the employees' insurances.
+            </p>
+            <p>
+                I worked in a small team of three developers. 
+                My role was to do the whole back-end part while my colleagues took care of the front-end.
+            </p>
+            <p>
+                Here I used technologies such as Spring Boot, OAuth2 through Gluu Server, Hibernate, SAP UI5, jQuery and Apache POI.
+            </p>
+
+
+            <h4>Travel Expenses</h4>
+            <p>
+                This web application was created with the purpose of managing employees' travel expenses in the company.
+            </p>
+            <p>
+                The team was constantly changing but there were an average of 4 - 8 developers actively working on it.
+                On Travel Expenses I mostly had to deal with back-end and occasionally front-end tasks.
+            </p>
+            <p>
+                Some of the technologies I used here are Spring Boot, SAP UI5, PostgreSQL, Mongo, Apache POI, Hibernate, Cron jobs and so on.
+            </p>
+
+
+            <h4>Overseer</h4>
+            <p>
+                This is a personal project of mine. It is an aspect oriented typescript framework for back-end which 
+                takes inspiration from Spring Boot and Angular.
+            </p>
+            <p>
+                It it supposed to combine the <em>good</em> parts of both Spring and Angular and leave the <em>bad</em> ones.
+            </p>
+            <p>
+                I am currently working on it but when I'll consider it ready for productive use I'll add a link here.
+            </p>
+
+
+            <h4>iRe</h4>
+            <p>
+                A highly complex web application that dealt with the <em>magic</em> of re-insurance business logic. 
+            </p>
+            <p>
+                We worked in teams of 6, with teams in 3 different cities and 2 countries. 
+                We communicated through Skype, Slack and emails while the tasks were organized in in Jira.
+            </p>
+            <p>
+                I only worked on this project a few months since I had another one coming soon. My job was to do front-end pages and logic.
+            </p>
+            <p>
+                At the time I mostly used SAP UI5 for page building and jQuery for requests.
+            </p>
+
+
+            <h4>Candidate Management</h4>
+            <p>
+                Application made with the purpose of managing candidates for internship at the company.
+            </p>
+            <p>
+                In this project I worked mostly on the front-end side with React and did some back-end refactoring, testing and validation.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container col-md-8 col-lg-6">
+            <h3>Get in touch</h3>
+            
+            <p>
+                So you're looking for a professional, communicative and on-time software developer with a certain set of skills for your company or your next project?
+            </p>
+            <p>
+                If you are interested in hiring, you can always contact me.
+            </p>
+            <br>
+
+            <hr>
+
+            <h4>Paul Cosma</h4>
+            <p class="contact-details">
+                Phone: <a href="tel:+40757995418">+40 757 995 418</a> <br>
+                Email: <a href="mailto:paul.cosma@outlook.com">paul.cosma@outlook.com</a> <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/paul-cosma-258580170/">Visit my profile</a>
+            </p>
+        </div>
+    </section>
+</body>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+<script src="./main.js"></script>
+</html>

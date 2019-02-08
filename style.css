@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+
+*, html {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto' !important;
+}
+
+body, section {
+    background-color: #fbfbfb;
+}
+
+nav {
+    background-color: #fbfbfb;
+}
+
+#top {
+    height: 0.2em;
+    background-color: #00fac4;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-family: 'Roboto';
+    font-weight: 200;
+}
+
+p, h4 {
+    color: #141414;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    color: #4c5454;
+}
+
+#hero h4 {
+    padding-bottom: 1em;
+    padding-top: 0;
+    color: #141414;
+}
+
+table {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    color: #04c49a;
+
+}
+
+li a {
+    font-weight: 300;
+}
+
+.active a {
+    color: #04c49a !important;
+    font-weight: 300;
+}
+
+li a:focus, li a:hover {
+    color: #04c49a !important;
+}
+
+hr {
+    border-color: #04c49a80;
+}
+
+td {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding-bottom: 1em;
+}
+
+#hero {
+    height: calc(100vh - 0.2em - 56px);
+}
+
+#hero .container {
+    padding-top: 35vh
+
+}
+
+.btn-prime, .btn-prime:hover {
+    border-radius: 0;
+    color: #04c49a;
+    border-color: #04c49a;
+}
+
+.btn-prime:hover {
+    background-color: #04c49a;
+    color: #fbfbfb;
+}
+
+#skillset, #portfolio, #contact {
+    margin-top: 10vh;
+}
+
+a, a:visited, a:hover {
+    color: #04c49a;
+}
+
+.contact-details {
+    font-size: 0.9em;
+}
+
+@media (min-width: 993px) {
+    body {
+        font-size: 1.2em;
+    }
+
+    .navbar-right .navbar-nav {
+        margin-left: auto;
+    }
+}
