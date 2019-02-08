@@ -92,7 +92,8 @@ td {
 }
 
 #hero .container {
-    padding-top: 30vh
+    padding-top: 25vh;
+    padding-bottom: 5vh;
 
 }
 
