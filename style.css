@@ -88,21 +88,23 @@ td {
 }
 
 #hero {
-    height: calc(100vh - 0.2em - 56px);
+    height: calc(100vh - 0.4em - 56px);
 }
 
 #hero .container {
-    padding-top: 35vh
+    padding-top: 30vh
 
 }
 
-.btn-prime, .btn-prime:hover {
+.btn-prime {
+    margin-top: 25px;
     border-radius: 50px;
     color: #04c49a;
     border-color: #04c49a;
+    height: 3em;
 }
 
-.btn-prime:focus {
+.btn-prime:focus, .btn-prime:hover {
     background-color: #04c49a;
     color: #fbfbfb;
 }
