@@ -3,20 +3,46 @@
 *, html {
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Roboto' !important;
+}
+
+:root {
+    --bg-color: #fbfbfb;
+
+    --primary-color: #04c49a;
+    --primary-color-light: #00fac4;
+    --primary-color-dark: #04c49a80;
+
+    --foreground: #141414;
+    --foreground-light: #4c5454;
+
+    --dm-color: #007bff;
+}
+
+.dark-mode {
+    --bg-color: #141414;
+
+    --foreground: #fbfbfb;
+    --foreground-light: #FFF;
+
+    --dm-color: #ffc107;
+}
+
+.dark-mode td, .dark-mode a {
+    color: #fbfbfb !important;
 }
 
 body, section {
-    background-color: #fbfbfb;
+    background-color: var(--bg-color);
+    font-family: 'Roboto' !important;
 }
 
 nav {
-    background-color: #fbfbfb;
+    background-color: var(--bg-color);
 }
 
 #top {
     height: 0.2em;
-    background-color: #00fac4;
+    background-color: var(--primary-color-light);
 }
 
 .navbar-toggler {
@@ -29,7 +55,7 @@ nav {
 }
 
 p, h4 {
-    color: #141414;
+    color: var(--foreground);
 }
 
 p {
@@ -43,13 +69,13 @@ h4 {
     line-height: 1.4em;
     padding-bottom: 0.1em;
     padding-top: 1em;
-    color: #4c5454;
+    color: var(--foreground-light);
 }
 
 #hero h4 {
     padding-bottom: 1em;
     padding-top: 0;
-    color: #141414;
+    color: var(--foreground);
 }
 
 table {
@@ -59,7 +85,7 @@ table {
 h3 {
     font-weight: 300;
     font-size: 1.4em;
-    color: #04c49a;
+    color: var(--primary-color);
 
 }
 
@@ -68,16 +94,16 @@ li a {
 }
 
 .active a {
-    color: #04c49a !important;
+    color: var(--primary-color) !important;
     font-weight: 300;
 }
 
 li a:focus, li a:hover {
-    color: #04c49a !important;
+    color: var(--primary-color) !important;
 }
 
 hr {
-    border-color: #04c49a80;
+    border-color: var(--primary-color-dark);
 }
 
 td {
@@ -100,14 +126,14 @@ td {
 .btn-prime {
     margin-top: 25px;
     border-radius: 50px;
-    color: #04c49a;
-    border-color: #04c49a;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
     height: 3em;
 }
 
 .btn-prime:focus, .btn-prime:hover {
-    background-color: #04c49a;
-    color: #fbfbfb;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 #skillset, #portfolio, #contact {
@@ -115,11 +141,19 @@ td {
 }
 
 a, a:visited, a:hover {
-    color: #04c49a;
+    color: var(--primary-color);
 }
 
 .contact-details {
     font-size: 0.9em;
+}
+
+li i {
+    padding-right: 0.3em;
+}
+
+.dark-mode-button a, .dark-mode-button a:hover, .dark-mode-button a:focus {
+    color: var(--dm-color) !important;
 }
 
 @media (min-width: 993px) {
