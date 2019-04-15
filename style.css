@@ -47,6 +47,7 @@ nav {
 #top {
     height: 0.2em;
     background-color: var(--primary-color-light);
+    z-index: 1000;
 }
 
 .navbar-toggler {
@@ -160,30 +161,11 @@ li i {
     color: var(--dm-color) !important;
 }
 
-#overlay.darker {
+#overlay.visible-overlay {
     position: absolute;
     left:0;
     right:0;
-    top:0;
-    bottom:0;
-
-    z-index: 999;
-
-    -webkit-transition: background-color 1s ease-in;
-    -moz-transition: background-color 1s ease-in;
-    -o-transition: background-color 1s ease-in;
-    transition: background-color 1s ease-in;
-    background-color: var(--bg-color);
-
-    transition: opacity 1s ease-in;
-    opacity: 0;
-}
-
-#overlay.lighter {
-    position: absolute;
-    left:0;
-    right:0;
-    top:0;
+    top:0.2em;
     bottom:0;
 
     z-index: 999;
