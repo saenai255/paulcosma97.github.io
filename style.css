@@ -22,13 +22,17 @@
     --bg-color: #141414;
 
     --foreground: #fbfbfb;
-    --foreground-light: #FFF;
+    --foreground-light: #a2a2a2;
 
     --dm-color: #ffc107;
 }
 
-.dark-mode td, .dark-mode a {
-    color: #fbfbfb !important;
+.dark-mode a.navbar-brand {
+    color: var(--foreground);
+}
+
+.dark-mode td, .dark-mode #navbarNav a {
+    color: var(--foreground-light);
 }
 
 body, section {
