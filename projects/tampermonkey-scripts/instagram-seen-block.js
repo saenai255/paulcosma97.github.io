@@ -8,27 +8,28 @@
 // @grant        none
 // ==/UserScript==
 
-XMLHttpRequest.prototype.__open = XMLHttpRequest.prototype.open;
-XMLHttpRequest.prototype.open = function(...args) {
-    const [_, url] = args;
+window.activateSeenBlocker = function () {
+    XMLHttpRequest.prototype.__open = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function (...args) {
+        const [_, url] = args;
 
-    if (url !== null) {
-        const bla = decodeURIComponent(url);
-        const urlMatches = url.match(/\/direct_v2\/web\/threads\/[0-9]*\/items\/[0-9]*\/seen/gi);
-        if (Array.isArray(urlMatches) && urlMatches.length === 1) {
-            console.error(`Seen request ${url} blocked.`);
+        if (url !== null) {
+            const bla = decodeURIComponent(url);
+            const urlMatches = url.match(/\/direct_v2\/web\/threads\/[0-9]*\/items\/[0-9]*\/seen/gi);
+            if (Array.isArray(urlMatches) && urlMatches.length === 1) {
+                console.error(`Seen request ${url} blocked.`);
 
-            return false;
+                return false;
+            }
         }
+
+        return this.__open(...args);
+
     }
 
-    return this.__open(...args);
-
-}
-
-document.addEventListener('DOMContentLoaded', function(){
-    const popup = document.createElement('h1');
-    popup.style.cssText = `
+    document.addEventListener('DOMContentLoaded', function () {
+        const popup = document.createElement('h1');
+        popup.style.cssText = `
         position: fixed;
         z-index: 99999;
         top: min(75px, 10vh);
@@ -39,7 +40,9 @@ document.addEventListener('DOMContentLoaded', function(){
         opacity: 75%;
     `;
 
-    popup.textContent = 'SeenBlocker is ON';
+        popup.textContent = 'SeenBlocker is ON';
 
-    document.body.appendChild(popup);
-});
+        document.body.appendChild(popup);
+    });
+
+}
